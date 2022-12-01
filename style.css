@@ -1,12 +1,10 @@
 /* IMPOSTAZIONI GENERALI */
 
 body {
-    background-image: url(assets/img/sfondo.png);
-    background-position: center;
-    background-size: contain;
     font-family: Poppins, "Helvetica Neue", sans-serif;
-    font-size: 20px;
-    margin: 30px;
+    background-image: url(assets/img/sfondo.png);
+    background-position: center center;
+    background-size: contain;
     line-height: 1.5;
 }
 
@@ -14,18 +12,20 @@ body {
 /* HEADER */
 
 header {
-    background-color: #4e7dff;
+    background: linear-gradient( 0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 38%, rgba(0, 212, 255, 1) 100%);
     font-weight: bold;
-    margin-bottom: 15px;
+    margin: 20px;
     color: white;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    box-shadow: 0px 4px 4px 0px #000000;
+    padding: 2em;
+    box-shadow: 0px 7px 7px 0px #b6b6b6;
+    border-bottom: 2px solid lightblue;
 }
 
 .epicode {
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 header img {
@@ -37,8 +37,14 @@ header img {
 /* MAIN */
 
 main {
-    background-color: white;
+    background-color: rgb(244, 242, 242);
     margin-bottom: 15px;
+    box-shadow: 0px 7px 7px 0px #b6b6b6;
+}
+
+main ul,
+ol {
+    margin-left: 2em;
 }
 
 
@@ -51,7 +57,9 @@ main {
 /* FORM */
 
 iframe {
-    width: 100%;
+    width: 95%;
+    border-radius: 15px 15px 15px 15px;
+    text-align: center;
 }
 
 
@@ -64,4 +72,5 @@ footer {
     background-color: rgb(66, 66, 121);
     align-items: center;
     color: white;
+    box-shadow: 0px 7px 7px 0px #b6b6b6;
 }
