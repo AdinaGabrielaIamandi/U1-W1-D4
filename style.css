@@ -19,7 +19,7 @@ header {
     color: white;
     text-align: center;
     padding: 2em;
-    box-shadow: 0px 5px 5px 0px black;
+    box-shadow: 0px 5px 5px 0px #b6b6b6;
     border-bottom: 1px solid blue;
 }
 
@@ -43,7 +43,7 @@ header img {
 /* MAIN */
 
 main {
-    background-color: rgb(244, 242, 242);
+    background-color: white;
     margin: 20px;
     box-shadow: 0px 7px 7px 0px #b6b6b6;
     padding: 1.2em;
@@ -80,7 +80,7 @@ ol {
 code {
     background: lightgray;
     border-radius: 5px;
-    border: 1px solid darkgray;
+    border: 1px solid #dee1e3;
 }
 
 
@@ -88,18 +88,41 @@ code {
 
 caption {
     font-weight: bold;
+    font-style: italic;
 }
 
 table {
     width: 100%;
-    border-bottom: 1px solid #0400ff;
+    margin-bottom: 2em;
+}
+
+thead th {
+    background-color: #36f;
+    color: white;
+    border-left: 1px solid #dddddd;
+}
+
+th,
+td {
+    padding: 15px 15px;
+    vertical-align: bottom;
     text-align: center;
 }
 
-thead {
-    background-color: blue;
-    color: white;
-    height: 60px;
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody {
+    border-bottom: 1.5px solid #36f;
+}
+
+.article a {
+    color: lightseagreen;
 }
 
 
@@ -113,23 +136,97 @@ iframe {
 
 .video {
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .novità {
-    background-color: rgb(157, 153, 153);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    background-color: #dddddd;
+    padding: 2em;
+    vertical-align: center;
+}
+
+.novità h3 {
+    font-weight: bold;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.novità input {
+    border-bottom: 1px dashed black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 2em;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+.novità button {
+    background-color: #36f;
+    border: none;
+    font-weight: bold;
+    color: white;
+    height: 2.6em;
+    width: 5.5em;
 }
 
 
 /* ELEMENTI NELL' ASIDE */
 
+aside {
+    padding-top: 2em;
+}
+
+aside h4 {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.correlati {
+    border: 1px solid #c2c1c1;
+    height: 7em;
+    background-color: #dddddd;
+    margin-top: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.correlati a {
+    color: lightseagreen;
+    font-weight: bold;
+}
+
+.data {
+    text-align: right;
+    padding-right: 1em;
+    padding-top: 1em;
+}
+
 
 /* FOOTER */
 
 footer {
-    background-color: rgb(66, 66, 121);
-    align-items: center;
+    background: linear-gradient( 0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 38%, rgba(0, 212, 255, 1) 100%);
+    margin: 20px;
     color: white;
-    box-shadow: 0px 7px 7px 0px #b6b6b6;
+    text-align: center;
+    box-shadow: 0px 5px 5px 0px #b6b6b6;
+    border-bottom: 1px solid lightgray;
+    height: 10em;
+    padding-top: 2em;
+}
+
+footer h4 {
+    padding-bottom: 1em;
+}
+
+footer p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+footer a {
+    font-weight: bold;
+    color: rgb(223, 43, 226);
 }
